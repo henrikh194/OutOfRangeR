@@ -21,4 +21,3 @@ function drawCross(){
     ctx.lineTo(centerX + size, centerY);
     ctx.stroke();
 }
-
