@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Submarine</title>
+  <title>OutOfRangeR</title>
   <style>
     body {
       margin: 0;
@@ -28,19 +28,21 @@
     
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    let appRunning = true;
 
     inputPolling();
-
+    
     function gameLoop() {
       if (!appRunning) return;
     
       //drawEverything()
-
-      drawBackground();
-      drawWorld();
-      drawNPCs();
-      drawPlayer();
-      drawOverlayElements();
+      drawTest();
+      drawCross();
+      //drawBackground();
+      //drawWorld();
+      //drawNPCs();
+      //drawPlayer();
+      //drawOverlayElements();
 
       requestAnimationFrame(gameLoop);
     }
