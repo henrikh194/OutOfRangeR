@@ -29,7 +29,7 @@ function drawTriangle(size,x,y,color){
 
 function drawCircle(size, x, y, color) {
     ctx.strokeStyle = color;
-    ctx.lineWidth = 3;
+    ctx.lineWidth = 1;
     var radius = size;
     ctx.beginPath();
     ctx.arc(x, y, radius, 0, Math.PI * 2);
